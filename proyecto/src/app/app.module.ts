@@ -11,6 +11,7 @@ import { ForoComponent } from './foro/foro.component';
 import { LoginComponent } from './login/login.component';
 import { SigninComponent } from './signin/signin.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     GuiaComponent,
     ForoComponent,
     LoginComponent,
-    SigninComponent
+    SigninComponent,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,

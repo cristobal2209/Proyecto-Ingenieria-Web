@@ -1,17 +1,18 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg text-bg-light shadow-sm">
     <div class="container-fluid">
       <!--Texto de logo-->
       <a class="navbar-brand" routerLink="">
-          <h4>RE:useME</h4>
+        <img src="assets/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        RE:useME
       </a>
       <!--Botón menú hamburguesa -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!--Menu de navegacion-->
-      <div class="collapse navbar-collapse ">
-        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
             <a class="nav-link" routerLink="/guia" routerLinkActive="active">Guía</a>
           </li>
           <li class="nav-item">
@@ -23,10 +24,10 @@
         </ul>
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/login" routerLinkActive="active">Log In</a>
+            <a class="nav-link" routerLink="/login" routerLinkActive="active">Iniciar Sesión</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/signin" routerLinkActive="active">Sign In</a>
+            <a class="nav-link" routerLink="/signin" routerLinkActive="active">Registrarse</a>
           </li>
         </ul>
       </div>

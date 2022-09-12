@@ -1,23 +1,32 @@
 <app-navbar></app-navbar>
-<div class="container-lg mw-100 mh-100 bg-primary text-center text-white" style="min-height: 100vh">
-    <div class="row align-items-start">
-        <div class="col-lg ">
-            <div class="bg-warning">
-                <figure>
-                    <img class="figure-img img-fluid" src="assets/login.jpg" >
-                </figure>
-            </div>
-        </div>
-        <div class="col-lg" >
-            <div class="bg-warning">
-                2
-            </div>
-        </div>
-        <div class="col-lg">
-            <div class="bg-warning">
-                3
-            </div>
-        </div>
+
+<div
+  class="container-lg mw-100 mh-100 text-center row"
+  style="min-height: 100vh"
+>
+  <div class="col-lg d-flex justify-content-lg-center align-items-center">
+    <figure>
+        <img src="assets/login.jpg" class="img-fluid">
+    </figure>
+  </div>
+  <div class="col-lg d-flex justify-content-lg-left align-items-center">
+    <div class="">
+        <H1 class="display-1">Feliz de volver a verte!</H1>
     </div>
+  </div>
+  <div class="col-lg d-flex justify-content-lg-center align-items-center">
+    <form>
+        <div class="mb-3">
+          <label for="login-mail-input" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="login-mail-input" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="login-pass-input" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="login-pass-input">
+        </div>
+        <button type="submit" class="btn btn-dark">Iniciar sesión</button>
+      </form>
+  </div>
 </div>
+
 <app-footer></app-footer>

@@ -1,32 +1,37 @@
-<app-navbar></app-navbar>
 
 <div
-  class="container-lg mw-100 mh-100 text-center row"
+  class="container-md mw-100 mh-100 text-center row"
   style="min-height: 100vh"
 >
-  <div class="col-lg d-flex justify-content-lg-center align-items-center">
+  <div
+    class="col-sm col-md d-flex justify-content-lg-center align-items-center"
+  >
     <figure>
-        <img src="assets/login.jpg" class="img-fluid">
+      <img src="assets/login.jpg" class="img-fluid" />
     </figure>
   </div>
-  <div class="col-lg d-flex justify-content-lg-left align-items-center">
-    <div class="">
-        <H1 class="display-1">Feliz de volver a verte!</H1>
+  <div class="col-md d-flex align-items-center justify-content-lg-left">
+    <div>
+      <H1 class="display-1">¡Felices de volver a verte!</H1>
     </div>
   </div>
-  <div class="col-lg d-flex justify-content-lg-center align-items-center">
+  <div class="col-md d-flex align-items-center justify-content-md-center">
     <form>
-        <div class="mb-3">
-          <label for="login-mail-input" class="form-label">Correo</label>
-          <input type="email" class="form-control" id="login-mail-input" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-          <label for="login-pass-input" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="login-pass-input">
-        </div>
-        <button type="submit" class="btn btn-dark">Iniciar sesión</button>
-      </form>
+      <div class="mb-3">
+        <label for="login-mail-input" class="form-label">Correo</label>
+        <input
+          type="email"
+          class="form-control"
+          id="login-mail-input"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="login-pass-input" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="login-pass-input" />
+      </div>
+      <button type="submit" class="btn btn-dark">Iniciar sesión</button>
+    </form>
   </div>
 </div>
 
-<app-footer></app-footer>

@@ -1,3 +1,51 @@
-<app-navbar></app-navbar>
-<p>signin works!</p>
-<app-footer></app-footer>
+
+<div
+  class="container-lg mw-100 mh-100 text-center row"
+  style="min-height: 100vh"
+>
+  <div class="col-lg d-flex justify-content-lg-center align-items-center">
+    <figure>
+      <img src="assets/login.jpg" class="img-fluid" />
+    </figure>
+  </div>
+  <div class="col-lg d-flex justify-content-lg-left align-items-center">
+    <div class="">
+      <H1 class="display-1">¡Únete al reciclaje!</H1>
+    </div>
+  </div>
+  <div class="col-lg d-flex justify-content-lg-center align-items-center">
+    <form>
+      <div class="mb-3">
+        <label for="register-username-input" class="form-label"
+          >Nombre de usuario</label
+        >
+        <input type="text" class="form-control" id="register-username-input" />
+      </div>
+      <div class="mb-3">
+        <label for="register-mail-input" class="form-label">Correo</label>
+        <input
+          type="email"
+          class="form-control"
+          id="register-mail-input"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="register-pass-input" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="register-pass-input" />
+      </div>
+      <div class="mb-3">
+        <label for="register-repass-input" class="form-label"
+          >Repita contraseña</label
+        >
+        <input
+          type="password"
+          class="form-control"
+          id="register-repass-input"
+        />
+      </div>
+      <button type="submit" class="btn btn-dark">Registrarse</button>
+    </form>
+  </div>
+</div>
+

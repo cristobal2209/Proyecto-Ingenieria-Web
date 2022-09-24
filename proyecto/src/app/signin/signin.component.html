@@ -1,46 +1,60 @@
-<div class="main-wrapper text-center row">
-  <div class="col-md d-flex justify-content-lg-center align-items-center">
-    <figure>
-      <img src="assets/images/login.jpg" class="img-fluid" />
-    </figure>
-  </div>
-  <div class="col-md d-flex justify-content-lg-left align-items-center">
-    <div class="">
-      <H1 class="display-1">¡Únete al reciclaje!</H1>
+<main>
+  <div class="py-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col d-flex justify-content-center align-items-center">
+          <img src="assets/images/login.jpg" class="img-fluid" />
+        </div>
+        <div
+          class="col d-flex justify-content-center align-items-center text-center"
+        >
+          <H1 class="display-1">¡Felices de volver a verte!</H1>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <form>
+            <div class="mb-3">
+              <label for="register-username-input" class="form-label"
+                >Nombre de usuario</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="register-username-input"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="register-mail-input" class="form-label">Correo</label>
+              <input
+                type="email"
+                class="form-control"
+                id="register-mail-input"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="register-pass-input" class="form-label"
+                >Contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="register-pass-input"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="register-repass-input" class="form-label"
+                >Repita contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="register-repass-input"
+              />
+            </div>
+            <button type="submit" class="btn btn-dark">Registrarse</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="col-md d-flex justify-content-lg-center align-items-center">
-    <form>
-      <div class="mb-3">
-        <label for="register-username-input" class="form-label"
-          >Nombre de usuario</label
-        >
-        <input type="text" class="form-control" id="register-username-input" />
-      </div>
-      <div class="mb-3">
-        <label for="register-mail-input" class="form-label">Correo</label>
-        <input
-          type="email"
-          class="form-control"
-          id="register-mail-input"
-          aria-describedby="emailHelp"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="register-pass-input" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="register-pass-input" />
-      </div>
-      <div class="mb-3">
-        <label for="register-repass-input" class="form-label"
-          >Repita contraseña</label
-        >
-        <input
-          type="password"
-          class="form-control"
-          id="register-repass-input"
-        />
-      </div>
-      <button type="submit" class="btn btn-dark">Registrarse</button>
-    </form>
-  </div>
-</div>
+</main>

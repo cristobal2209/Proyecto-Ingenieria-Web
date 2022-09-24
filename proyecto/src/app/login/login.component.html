@@ -1,30 +1,40 @@
-<div class="main-wrapper text-center row">
-  <div class="col-sm d-flex justify-content-lg-center align-items-center">
-    <figure>
-      <img src="assets/images/login.jpg" class="img-fluid" />
-    </figure>
-  </div>
-  <div class="col-md d-flex align-items-center justify-content-lg-left">
-    <div>
-      <H1 class="display-1">¡Felices de volver a verte!</H1>
+<main>
+  <div class="py-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col d-flex justify-content-center align-items-center">
+          <img src="assets/images/login.jpg" class="img-fluid" />
+        </div>
+        <div
+          class="col d-flex justify-content-center align-items-center text-center"
+        >
+          <H1 class="display-1">¡Felices de volver a verte!</H1>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <form>
+            <div class="mb-3">
+              <label for="login-mail-input" class="form-label">Correo</label>
+              <input
+                type="email"
+                class="form-control"
+                id="login-mail-input"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="login-pass-input" class="form-label"
+                >Contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="login-pass-input"
+              />
+            </div>
+            <button type="submit" class="btn btn-dark">Iniciar sesión</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="col-md d-flex align-items-center justify-content-md-center">
-    <form>
-      <div class="mb-3">
-        <label for="login-mail-input" class="form-label">Correo</label>
-        <input
-          type="email"
-          class="form-control"
-          id="login-mail-input"
-          aria-describedby="emailHelp"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="login-pass-input" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="login-pass-input" />
-      </div>
-      <button type="submit" class="btn btn-dark">Iniciar sesión</button>
-    </form>
-  </div>
-</div>
+</main>

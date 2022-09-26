@@ -2,95 +2,92 @@
   <div class="container-fluid p-0 fondoForo">
     <br />
     <!-- Intento de box de publicacion -->
-    <div>
-      <div class="container">
-        <div class="row">
-          <div class="col border border-secundary">
-            <div class="d-flex justify-content-end">
-              <button
-                type="button"
-                class="btn btn-primary btn-lg py-2"
-                style="
-                  --bs-btn-padding-y: 0.4rem;
-                  --bs-btn-padding-x: 0.9rem;
-                  --bs-btn-font-size: 0.9rem;
-                "
+    <div class="container">
+      <div class="row">
+        <div class="col border border-secundary">
+          <div class="d-flex justify-content-end">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg py-2"
+              style="
+                --bs-btn-padding-y: 0.4rem;
+                --bs-btn-padding-x: 0.9rem;
+                --bs-btn-font-size: 0.9rem;
+              "
+            >
+              Nueva publicacion
+            </button>
+          </div>
+          <br />
+          <!-- card de texto-->
+          <div class="card text-bg-light mb-3" style="width: auto">
+            <div class="card-body">
+              <i class="bi bi-person-circle d-flex justify-content-left"
+                ><a>Jimmy</a></i
               >
-                Nueva publicacion
-              </button>
-            </div>
-            <br />
-            <!-- card de texto-->
-            <div class="card text-bg-light mb-3" style="width: auto">
-              <div class="card-body">
-                <i class="bi bi-person-circle d-flex justify-content-left"
-                  ><a>Jimmy</a></i
-                >
-                <!--Cambiar por una columna que cambie el nombre y el icono-->
-                <p class="card-text">
-                  Alguien cacha como puedo hacer desaparecer un ojal de una
-                  camisa?
-                </p>
-                <div class="row">
-                  <div class="col d-flex justify-content-center">
-                    <div class="d-grid gap-2 d-md-block">
-                      <button
-                        type="button"
-                        class="btn btn-danger bi bi-heart"
-                      ></button>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <button
-                      type="button"
-                      class="btn btn-light bi bi-chat-square"
-                    ></button>
-                  </div>
+              <!--Cambiar por una columna que cambie el nombre y el icono-->
+              <p class="card-text">
+                Alguien cacha como puedo hacer desaparecer un ojal de una
+                camisa?
+              </p>
+              <div class="row">
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-danger bi bi-heart"
+                  ></button>
                 </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-light bi bi-chat-square"
+                  ></button>
+                </div>
+                <!--columa vacía para alinear-->
+                <div class="col-10"></div>
               </div>
             </div>
+          </div>
 
-            <!-- nueva carta-->
-            <br />
-            <div class="card text-bg-light mb-3" style="width: auto">
-              <div class="card-body">
-                <i class="bi bi-person-circle d-flex justify-content-left"
-                  ><a>Yuki</a></i
-                >
-                <p class="card-text">
-                  Me encanto como quedo, gracias a la tecnica "pintura en tela
-                  caliente" logre este acabado hermoso en acuarela
-                </p>
-                <div class="row">
-                  <div class="col d-flex justify-content-center">
-                    <div class="d-grid gap-2 d-md-block">
-                      <button
-                        type="button"
-                        class="btn btn-danger bi bi-heart"
-                      ></button>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <button
-                      type="button"
-                      class="btn btn-light bi bi-chat-square"
-                    ></button>
-                  </div>
+          <!-- nueva carta-->
+          <br />
+          <div class="card text-bg-light mb-3" style="width: auto">
+            <div class="card-body">
+              <i class="bi bi-person-circle d-flex justify-content-left"
+                ><a>Yuki</a></i
+              >
+              <p class="card-text">
+                Me encanto como quedo, gracias a la tecnica "pintura en tela
+                caliente" logre este acabado hermoso en acuarela
+              </p>
+              <div class="row">
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-danger bi bi-heart"
+                  ></button>
                 </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-light bi bi-chat-square"
+                  ></button>
+                </div>
+                <div class="col-10"></div>
               </div>
-              <img
-                src="assets/images/ImagenEjemploForo.jpg"
-                class="card-img-top"
-                alt="..."
-              />
             </div>
+            <img
+              src="assets/images/ImagenEjemploForo.jpg"
+              class="card-img-top"
+              alt="..."
+            />
           </div>
         </div>
       </div>
     </div>
 
     <!-- Pagination -->
-    <div>
+    <div class="py-5">
       <nav aria-label="...">
         <ul class="pagination pagination-circle justify-content-center">
           <li class="page-item">

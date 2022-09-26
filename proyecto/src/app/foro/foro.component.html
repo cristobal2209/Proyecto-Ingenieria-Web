@@ -1,7 +1,69 @@
-<main>
+<!-- Background image --
+<div
+  class="bg-image"
+  style="
+    background-image: url('assets/images/FondoForo.png');
+    height: 100vh;
+  "
+></div>
 
+<p style="background-image: url('assets/images/FondoForo.png');"></p>
+-- Background image -->
+
+<main>
   <div class="container-fluid p-0">
-    <p>foro works!</p>
+    <br>
+    <!-- Intento de box de publicacion -->
+    <div>
+      <div class="container text-center">
+        <div class="row border border-primary">
+          <div class="col border border-secundary">
+            <button type="button" class="btn btn-primary btn-lg d-flex justify-content-left"
+                    style="--bs-btn-padding-y: .40rem; --bs-btn-padding-x: .9rem; --bs-btn-font-size: .90rem;">
+              Nueva publicacion
+            </button>
+            <br>
+            <!-- card de texto--> 
+              <div class="card text-bg-light mb-3" style="width: auto;">
+                <div class="card-body">
+                  <i class="bi bi-person-circle d-flex justify-content-left"><a>Jimmy</a></i> <!--Cambiar por una columna que cambie el nombre y el icono-->
+                  <p class="card-text">Alguien cacha como puedo hacer desaparecer un ojal de una camisa?</p>
+                  <div class="row">
+                    <div class="col d-flex justify-content-center">
+                      <div class="d-grid gap-2 d-md-block">
+                        <button type="button" class="btn btn-danger bi bi-heart"></button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <button type="button" class="btn btn-light bi bi-chat-square"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <!-- nueva carta-->
+            <br>
+              <div class="card text-bg-light mb-3" style="width: auto;">
+                <div class="card-body">
+                  <i class="bi bi-person-circle d-flex justify-content-left"><a>Yuki</a></i> 
+                  <p class="card-text">Me encanto como quedo, gracias a la tecnica "pintura en tela caliente" logre este acabado hermoso en acuarela</p>
+                  <div class="row">
+                    <div class="col d-flex justify-content-center">
+                      <div class="d-grid gap-2 d-md-block">
+                        <button type="button" class="btn btn-danger bi bi-heart"></button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <button type="button" class="btn btn-light bi bi-chat-square"></button>
+                    </div>
+                  </div>
+                </div>
+                <img src="assets/images/ImagenEjemploForo.jpg" class="card-img-top" alt="...">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Pagination -->
     <div>
@@ -25,8 +87,5 @@
         </ul>
       </nav>
     </div>
-
-
   </div>
-
 </main>

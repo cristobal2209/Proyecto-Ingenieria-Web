@@ -2,3 +2,9 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+.fondo-web {
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    background-image: url("/assets/images/FondoHome.png")
+}

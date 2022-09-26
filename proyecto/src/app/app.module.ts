@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { GuiaComponent } from './guia/guia.component';
 import { ForoComponent } from './foro/foro.component';
 import { LoginComponent } from './login/login.component';
-import { SigninComponent } from './signin/signin.component';
+import { RegistroComponent } from './registro/registro.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GaleriaComponent } from './galeria/galeria.component';
 
@@ -22,7 +22,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
     GuiaComponent,
     ForoComponent,
     LoginComponent,
-    SigninComponent,
+    RegistroComponent,
     GaleriaComponent
   ],
   imports: [

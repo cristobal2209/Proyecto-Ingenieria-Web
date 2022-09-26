@@ -13,6 +13,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { NuevaPublicacionForoComponent } from './nueva-publicacion-foro/nueva-publicacion-foro.component';
+import { NuevaPublicacionGaleriaComponent } from './nueva-publicacion-galeria/nueva-publicacion-galeria.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NuevaPublicacionForoComponent } from './nueva-publicacion-foro/nueva-pu
     LoginComponent,
     RegistroComponent,
     GaleriaComponent,
-    NuevaPublicacionForoComponent
+    NuevaPublicacionForoComponent,
+    NuevaPublicacionGaleriaComponent
   ],
   imports: [
     BrowserModule,

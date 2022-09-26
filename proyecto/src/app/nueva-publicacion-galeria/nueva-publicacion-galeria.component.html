@@ -1,0 +1,51 @@
+<main class="fondo-web">
+    <div class="container">
+        <div class="row">
+            <div class="col py-5">
+                <h1>¿Qué nos mostrarás hoy?</h1>
+                <div class="col d-flex justify-content-start align-items-left py-5">
+                    <form>
+                      <div class="mb-3" >
+                        <label for="login-mail-input" class="form-label">Titulo</label>
+                        <input type="text" class="form-control" placeholder="nombra tu publicación" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="col d-flex justify-content-end align-items-center py-2">
+                        <p class="px-2">Escoge un tag para categorizar tu creación</p>
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                          <div class="col d-flex justify-content-center py-2">
+                            <span class="badge rounded-pill text-bg-dark">#pantalones</span>
+                          </div>
+                          <div class="col d-flex justify-content-center py-2">
+                            <span class="badge rounded-pill text-bg-dark">#polerones</span>
+                          </div>
+                          <div class="col d-flex justify-content-center py-2">
+                            <span class="badge rounded-pill text-bg-dark">#calcetines</span>
+                          </div>
+                          <div class="col d-flex justify-content-center py-2">
+                            <span class="badge rounded-pill text-bg-dark">#zapatillas</span>
+                          </div>
+                          <div class="col d-flex justify-content-center py-2">
+                            <span class="badge rounded-pill text-bg-dark">#vestidos</span>
+                          </div>
+                          <div class="col d-flex justify-content-center py-2">
+                            <span class="badge rounded-pill text-bg-dark">#poleras</span>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+            </div>
+            
+            <!-- para subir imagen con preview https://larainfo.com/blogs/bootstrap-5-image-upload-with-preview -->
+            <div class="col py-5">
+                <div class="mb-5">
+                    <label for="Image" class="form-label"><h2>Sube aqui tu imagen</h2></label>
+                    <input class="form-control " type="file" id="formFile" onchange="preview()">
+                    <button routerLink="/galeria" onclick="clearImage()" class="btn btn-dark mt-3">Subir!</button>
+                </div>
+                <img id="frame" src="" class="img-fluid" />
+            </div>
+            
+        </div>
+    </div>
+</main>

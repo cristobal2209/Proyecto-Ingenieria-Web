@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { NuevaPublicacionForoComponent } from './nueva-publicacion-foro/nueva-publicacion-foro.component';
 import { NuevaPublicacionGaleriaComponent } from './nueva-publicacion-galeria/nueva-publicacion-galeria.component';
+import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NuevaPublicacionGaleriaComponent } from './nueva-publicacion-galeria/nu
     RegistroComponent,
     GaleriaComponent,
     NuevaPublicacionForoComponent,
-    NuevaPublicacionGaleriaComponent
+    NuevaPublicacionGaleriaComponent,
+    PerfilUsuarioComponent
   ],
   imports: [
     BrowserModule,

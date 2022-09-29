@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { NuevaPublicacionForoComponent } from './nueva-publicacion-foro/nueva-publicacion-foro.component';
 import { NuevaPublicacionGaleriaComponent } from './nueva-publicacion-galeria/nueva-publicacion-galeria.component';
+import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 
 const routes: Routes = [
   {
@@ -41,7 +42,12 @@ const routes: Routes = [
   {
     path: 'nueva-publicacion-galeria',
     component: NuevaPublicacionGaleriaComponent
+  },
+  {
+    path: 'perfil-usuario',
+    component: PerfilUsuarioComponent
   }
+  
 ];
 
 @NgModule({

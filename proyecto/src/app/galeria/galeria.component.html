@@ -6,7 +6,18 @@
         <!--boton filtros-->
         <div class="col d-flex justify-content-center align-items-center">
           <div class="mx-1 pb-3">
-            <button class="btn btn-dark">Filtros ↓</button>
+            <div class="row">
+              <div class="col">
+                <div ngbDropdown class="d-inline-block">
+                  <button type="button" class="btn btn-dark" id="dropdownBasic1" ngbDropdownToggle>Filtrar Tag por:</button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>Más Reciente</button>
+                    <button ngbDropdownItem>Me gusta</button>
+                    <button ngbDropdownItem>A-Z</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!--tags-->

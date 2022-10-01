@@ -1,23 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-=======
 import { User } from './registroClasses';
->>>>>>> dd
 
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
-<<<<<<< HEAD
-  styleUrls: ['./registro.component.scss']
-})
-export class RegistroComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-=======
   styleUrls: ['./registro.component.scss'],
 })
 export class RegistroComponent implements OnInit {
@@ -44,5 +30,4 @@ export class RegistroComponent implements OnInit {
   }
 
   ngOnInit(): void {}
->>>>>>> dd
 }

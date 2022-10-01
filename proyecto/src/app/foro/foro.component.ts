@@ -11,5 +11,5 @@ export class ForoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  page = 1;
 }

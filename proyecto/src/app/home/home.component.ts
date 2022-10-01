@@ -11,7 +11,5 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  images = ['assets/images/Banner1.png','assets/images/Banner2.png','assets/images/Banner3.png'];
 }
-
-//carousel

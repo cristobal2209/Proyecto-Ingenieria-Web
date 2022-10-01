@@ -11,5 +11,5 @@ export class GaleriaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  page = 1;
 }

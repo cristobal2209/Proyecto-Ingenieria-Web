@@ -15,6 +15,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { NuevaPublicacionForoComponent } from './nueva-publicacion-foro/nueva-publicacion-foro.component';
 import { NuevaPublicacionGaleriaComponent } from './nueva-publicacion-galeria/nueva-publicacion-galeria.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,14 +30,10 @@ import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.componen
     GaleriaComponent,
     NuevaPublicacionForoComponent,
     NuevaPublicacionGaleriaComponent,
-    PerfilUsuarioComponent
+    PerfilUsuarioComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

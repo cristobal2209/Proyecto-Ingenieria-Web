@@ -20,7 +20,9 @@
             <div class="card-body">
               <!--<i class="bi bi-person-circle"><a> Jimmy</a></i> -->
               <div>
-                <i class="bi bi-person-circle" routerLink="/perfil-usuario"><a> Jimmy</a></i>
+                <i class="bi bi-person-circle" routerLink="/perfil-usuario"
+                  ><a> Jimmy</a></i
+                >
               </div>
               <!--Cambiar por una columna que cambie el nombre y el icono-->
               <p class="card-text">
@@ -72,20 +74,36 @@
               </div>
             </div>
             <div class="img-container container-fluid">
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#imagenForo">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#imagenForo"
+              >
                 <img
-                src="assets/images/ImagenEjemploForo.jpg"
-                class="card-img-top img-thumbnail img-fluid"
-                alt="..."
-              />
+                  src="assets/images/ImagenEjemploForo.jpg"
+                  class="card-img-top img-thumbnail img-fluid"
+                  alt="..."
+                />
               </button>
 
               <!--Modal start-->
-              <div class="modal fade" id="imagenForo" tabindex="-1" aria-labelledby="imagenForo" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="imagenForo"
+                tabindex="-1"
+                aria-labelledby="imagenForo"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="imagenForo"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
                       <img
@@ -95,14 +113,19 @@
                       />
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <!--Modal end-->
-              
+              <!-- Button trigger modal -->
             </div>
           </div>
         </div>
@@ -111,7 +134,13 @@
 
     <!-- Pagination -->
     <div class="py-5">
-      <ngb-pagination class="d-flex justify-content-center" [collectionSize]="100" [(page)]="page" [maxSize]="4" [boundaryLinks]="true"></ngb-pagination>
+      <ngb-pagination
+        class="d-flex justify-content-center"
+        [collectionSize]="100"
+        [(page)]="page"
+        [maxSize]="4"
+        [boundaryLinks]="true"
+      ></ngb-pagination>
     </div>
   </div>
 </main>

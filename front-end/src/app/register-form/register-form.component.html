@@ -1,0 +1,138 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+  <div class="mb-4">
+    <!-- campo nombre de usuario -->
+    <label for="username" class="form-label">Nombre de usuario:</label>
+    <input
+      type="text"
+      class="form-control"
+      id="username"
+      name="username"
+      required
+      formControlName="username"
+    />
+  </div>
+
+  <!-- validar campo nombre de usuario obligatorio -->
+  <div
+    *ngIf="(registerForm.get('username')?.touched && registerForm.get('username')?.errors?.['required'])"
+    class="alert alert-danger"
+  >
+    Este campo es obligatorio.
+  </div>
+
+  <!-- validar campo nombre de usuario caracteres mínimos -->
+  <div
+    *ngIf="registerForm.get('username')?.touched && registerForm.get('username')?.errors?.['minlength']"
+    class="alert alert-danger"
+  >
+    Nombre de usuario debe ser de al menos
+    {{ registerForm.get('username')?.errors?.['minlength']?.requiredLength }}
+    caracteres.
+  </div>
+
+  <!-- validar campo nombre de usuario caracteres máximos -->
+  <div
+    *ngIf="registerForm.get('username')?.touched && registerForm.get('username')?.errors?.['maxlength']"
+    class="alert alert-danger"
+  >
+    Nombre de usuario debe ser como máximo
+    {{ registerForm.get('username')?.errors?.['maxlength']?.requiredLength }}
+    caracteres.
+  </div>
+
+  <!-- campo correo electrónico -->
+  <div class="mb-4">
+    <label for="email" class="form-label">Correo electrónico:</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      required
+      formControlName="email"
+    />
+  </div>
+
+  <!-- validar campo correo electrónico obligatorio -->
+  <div
+    *ngIf="(registerForm.get('email')?.touched && registerForm.get('email')?.errors?.['required'])"
+    class="alert alert-danger"
+  >
+    Este campo es obligatorio.
+  </div>
+
+  <!-- validar campo correo electrónico caracteres máximos -->
+  <div
+    *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.errors?.['maxlength']"
+    class="alert alert-danger"
+  >
+    Correo debe ser como máximo
+    {{ registerForm.get('email')?.errors?.['maxlength']?.requiredLength }}
+    caracteres.
+  </div>
+
+  <!-- validar campo correo electrónico válido -->
+  <div
+    *ngIf="(registerForm.get('email')?.touched && registerForm.get('email')?.errors?.['email'])"
+    class="alert alert-danger"
+  >
+    Debe ser un correo válido.
+  </div>
+
+  <!-- campo contraseña -->
+  <div class="mb-4">
+    <label for="password" class="form-label">Contraseña:</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+      required
+      formControlName="password"
+    />
+  </div>
+
+  <!-- validar campo contraseña obligatorio -->
+  <div
+    *ngIf="(registerForm.get('password')?.touched && registerForm.get('password')?.errors?.['required'])"
+    class="alert alert-danger"
+  >
+    Este campo es obligatorio.
+  </div>
+
+  <!-- validar campo contraseña caracteres mínimos -->
+  <div
+    *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.errors?.['minlength']"
+    class="alert alert-danger"
+  >
+    Contraseña debe ser de al menos
+    {{ registerForm.get('password')?.errors?.['minlength']?.requiredLength }}
+    caracteres.
+  </div>
+
+  <!-- validar campo contraseña caracteres máximos -->
+  <div
+    *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.errors?.['maxlength']"
+    class="alert alert-danger"
+  >
+    Contraseña debe ser como máximo
+    {{ registerForm.get('password')?.errors?.['maxlength']?.requiredLength }}
+    caracteres.
+  </div>
+
+  <!-- campo repetir contraseña
+  <div class="mb-4">
+    <label for="repassword" class="form-label">Repita contraseña:</label>
+    <input
+      type="password"
+      class="form-control"
+      id="repassword"
+      name="repassword"
+      formControlName="repassword"
+    />
+  </div> -->
+
+  <button type="submit" class="btn btn-dark" [disabled]="!registerForm.valid">
+    Registrarse
+  </button>
+</form>

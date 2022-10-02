@@ -15,7 +15,9 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { NuevaPublicacionForoComponent } from './nueva-publicacion-foro/nueva-publicacion-foro.component';
 import { NuevaPublicacionGaleriaComponent } from './nueva-publicacion-galeria/nueva-publicacion-galeria.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
-import { FormsModule } from '@angular/forms';
+//import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterFormComponent } from './register-form/register-form.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +33,9 @@ import { FormsModule } from '@angular/forms';
     NuevaPublicacionForoComponent,
     NuevaPublicacionGaleriaComponent,
     PerfilUsuarioComponent,
+    RegisterFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

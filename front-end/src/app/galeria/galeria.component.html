@@ -1,0 +1,210 @@
+<main class="fondo-web">
+  <div class="container-fluid px-0">
+    <!--tags, botones subir foto y filtros-->
+    <section class="bg-success">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 py-2">
+        <!--boton filtros-->
+        <div class="col d-flex justify-content-center align-items-center">
+          <div class="mx-1 pb-3">
+            <div class="row">
+              <div class="col">
+                <div ngbDropdown class="d-inline-block">
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    id="dropdownBasic1"
+                    ngbDropdownToggle
+                  >
+                    Filtrar Tag por:
+                  </button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>Más Reciente</button>
+                    <button ngbDropdownItem>Me gusta</button>
+                    <button ngbDropdownItem>A-Z</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--tags-->
+        <div class="col d-flex justify-content-end align-items-center py-2">
+          <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col d-flex justify-content-center py-1">
+              <span class="badge rounded-pill text-bg-dark">#pantalones</span>
+            </div>
+            <div class="col d-flex justify-content-center py-1">
+              <span class="badge rounded-pill text-bg-dark">#polerones</span>
+            </div>
+            <div class="col d-flex justify-content-center py-1">
+              <span class="badge rounded-pill text-bg-dark">#calcetines</span>
+            </div>
+            <div class="col d-flex justify-content-center py-1">
+              <span class="badge rounded-pill text-bg-dark">#zapatillas</span>
+            </div>
+            <div class="col d-flex justify-content-center py-1">
+              <span class="badge rounded-pill text-bg-dark">#vestidos</span>
+            </div>
+            <div class="col d-flex justify-content-center py-1">
+              <span class="badge rounded-pill text-bg-dark">#poleras</span>
+            </div>
+          </div>
+        </div>
+        <!--boton subir foto-->
+        <div class="col d-flex justify-content-center align-items-center py-3">
+          <div class="mx-1 pb-3">
+            <button
+              class="btn btn-dark"
+              routerLink="/nueva-publicacion-galeria"
+            >
+              Sube tu foto
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--publicaciones de usuarios-->
+    <section>
+      <div class="py-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 rows-cols-lg-4">
+          <div
+            class="col d-flex justify-content-center align-items-center py-2"
+          >
+            <div class="card card-size bg-light">
+              <div class="card-body">
+                <div class="pb-3">
+                  <i class="bi bi-person-circle"><a> @nombre usuario</a></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="assets/images/prueba-galeria.png"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="pt-3">
+                  <h5 class="card-title">titulo publicacion</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col d-flex justify-content-center align-items-center py-2"
+          >
+            <div class="card card-size bg-light">
+              <div class="card-body">
+                <div class="pb-3">
+                  <i class="bi bi-person-circle"><a> @nombre usuario</a></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="assets/images/prueba2-galeria.jpg"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="pt-3">
+                  <h5 class="card-title">titulo publicacion</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col d-flex justify-content-center align-items-center py-2"
+          >
+            <div class="card card-size bg-light">
+              <div class="card-body">
+                <div class="pb-3">
+                  <i class="bi bi-person-circle"><a> @nombre usuario</a></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="assets/images/prueba3-galeria.jpg"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="pt-3">
+                  <h5 class="card-title">titulo publicacion</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col d-flex justify-content-center align-items-center py-2"
+          >
+            <div class="card card-size bg-light">
+              <div class="card-body">
+                <div class="pb-3">
+                  <i class="bi bi-person-circle"><a> @nombre usuario</a></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="assets/images/prueba4-galeria.png"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="pt-3">
+                  <h5 class="card-title">titulo publicacion</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col d-flex justify-content-center align-items-center py-2"
+          >
+            <div class="card card-size bg-light">
+              <div class="card-body">
+                <div class="pb-3">
+                  <i class="bi bi-person-circle"><a> @nombre usuario</a></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="assets/images/prueba5-galeria.png"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="pt-3">
+                  <h5 class="card-title">titulo publicacion</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col d-flex justify-content-center align-items-center py-2"
+          >
+            <div class="card card-size bg-light">
+              <div class="card-body">
+                <div class="pb-3">
+                  <i class="bi bi-person-circle"><a> @nombre usuario</a></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="assets/images/prueba6-galeria.png"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="pt-3">
+                  <h5 class="card-title">titulo publicacion</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pagination -->
+    <div class="py-5">
+      <ngb-pagination
+        class="d-flex justify-content-center"
+        [collectionSize]="100"
+        [(page)]="page"
+        [maxSize]="4"
+        [boundaryLinks]="true"
+      ></ngb-pagination>
+    </div>
+  </div>
+</main>

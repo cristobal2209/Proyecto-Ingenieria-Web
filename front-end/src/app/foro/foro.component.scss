@@ -1,0 +1,19 @@
+.fondoForo {
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    //text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    background-image: url("/assets/images/FondoForo.png")
+}
+
+.img-container {
+    max-height: 600px;
+    max-width: 500px;
+}
+
+/*
+.img-fluid1 {
+    max-height: auto;
+    max-width: 20%;
+}
+*/

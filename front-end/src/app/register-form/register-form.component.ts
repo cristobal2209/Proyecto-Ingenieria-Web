@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -8,6 +8,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class RegisterFormComponent implements OnInit {
   registerForm!: FormGroup;
+  password1:any;
+  password2:any;
 
   constructor(private readonly fb: FormBuilder) {}
 
@@ -17,6 +19,7 @@ export class RegisterFormComponent implements OnInit {
 
   onSubmit(): void {
     console.log('Form ->');
+    console.log(this.registerForm.value)
   }
 
   initForm(): FormGroup {
@@ -33,7 +36,7 @@ export class RegisterFormComponent implements OnInit {
         '',
         [Validators.required, Validators.email, Validators.maxLength(30)],
       ],
-      password: [
+      password1: [
         '',
         [
           Validators.required,
@@ -41,6 +44,19 @@ export class RegisterFormComponent implements OnInit {
           Validators.maxLength(15),
         ],
       ],
+      password2: [''],
     });
+  }
+  formValid() {
+    return !this.registerForm.valid || this.password1 != this.password2;
+  }
+
+  equalPass():boolean {
+    if (this.password1 == this.password2) {
+      return true;
+    }
+    else {
+      return false;
+    }
   }
 }

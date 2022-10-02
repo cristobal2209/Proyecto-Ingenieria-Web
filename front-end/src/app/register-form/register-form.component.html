@@ -84,14 +84,14 @@
       type="password"
       class="form-control"
       id="password"
-      name="password"
-      formControlName="password"
+      formControlName="password1"
+      [(ngModel)]="password1"
     />
   </div>
 
   <!-- validar campo contraseña obligatorio -->
   <div
-    *ngIf="(registerForm.get('password')?.touched && registerForm.get('password')?.errors?.['required'])"
+    *ngIf="(registerForm.get('password1')?.touched && registerForm.get('password1')?.errors?.['required'])"
     class="alert alert-danger"
   >
     Este campo es obligatorio.
@@ -99,37 +99,41 @@
 
   <!-- validar campo contraseña caracteres mínimos -->
   <div
-    *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.errors?.['minlength']"
+    *ngIf="registerForm.get('password1')?.touched && registerForm.get('password1')?.errors?.['minlength']"
     class="alert alert-danger"
   >
     Contraseña debe ser de al menos
-    {{ registerForm.get('password')?.errors?.['minlength']?.requiredLength }}
+    {{ registerForm.get('password1')?.errors?.['minlength']?.requiredLength }}
     caracteres.
   </div>
 
   <!-- validar campo contraseña caracteres máximos -->
   <div
-    *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.errors?.['maxlength']"
+    *ngIf="registerForm.get('password1')?.touched && registerForm.get('password1')?.errors?.['maxlength']"
     class="alert alert-danger"
   >
     Contraseña debe ser como máximo
-    {{ registerForm.get('password')?.errors?.['maxlength']?.requiredLength }}
+    {{ registerForm.get('password1')?.errors?.['maxlength']?.requiredLength }}
     caracteres.
   </div>
 
-  <!-- campo repetir contraseña
+  <!-- campo repetir contraseña -->
   <div class="mb-4">
     <label for="repassword" class="form-label">Repita contraseña:</label>
     <input
       type="password"
       class="form-control"
       id="repassword"
-      name="repassword"
-      formControlName="repassword"
+      formControlName="password2"
+      [(ngModel)]="password2"
     />
-  </div> -->
+  </div>
 
-  <button type="submit" class="btn btn-dark" [disabled]="!registerForm.valid">
+  <div *ngIf="!equalPass()" class="alert alert-danger">
+    Las contraseñas no coinciden.
+  </div>
+
+  <button type="submit" class="btn btn-dark" [disabled]="formValid()">
     Registrarse
   </button>
 </form>

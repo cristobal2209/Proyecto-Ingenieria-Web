@@ -18,24 +18,7 @@
 
       <!-- Formulario iniciar sesión -->
       <div class="col p-5">
-        <form>
-          <div class="mb-3">
-            <label for="login-mail-input" class="form-label">Correo</label>
-            <input
-              type="email"
-              class="form-control"
-              id="login-mail-input"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="login-pass-input" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="login-pass-input" />
-          </div>
-          <button type="submit" class="btn btn-dark" routerLink="">
-            Iniciar sesión
-          </button>
-        </form>
+        <app-login-form></app-login-form>
       </div>
     </div>
   </div>

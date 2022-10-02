@@ -18,6 +18,7 @@ import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.componen
 //import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { RegisterFormComponent } from './register-form/register-form.component';
     NuevaPublicacionGaleriaComponent,
     PerfilUsuarioComponent,
     RegisterFormComponent,
+    LoginFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],

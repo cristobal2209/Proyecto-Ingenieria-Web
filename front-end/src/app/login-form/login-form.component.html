@@ -1,0 +1,78 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+  <div class="mb-4">
+    <!-- campo correo electrónico -->
+    <label for="email" class="form-label">Correo</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      formControlName="email"
+      name="email"
+      aria-describedby="emailHelp"
+    />
+  </div>
+
+  <!-- validar campo correo electrónico obligatorio -->
+  <div
+    *ngIf="(loginForm.get('email')?.touched && loginForm.get('email')?.errors?.['required'])"
+    class="alert alert-danger"
+  >
+    Introduzca un correo.
+  </div>
+
+  <!-- validar campo correo electrónico caracteres máximos -->
+  <div
+    *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.errors?.['maxlength']"
+    class="alert alert-danger"
+  >
+    Debe ser un correo válido
+  </div>
+
+  <!-- validar campo correo electrónico válido -->
+  <div
+    *ngIf="(loginForm.get('email')?.touched && loginForm.get('email')?.errors?.['email'])"
+    class="alert alert-danger"
+  >
+    Debe ser un correo válido.
+  </div>
+
+  <!-- campo contraseña -->
+  <div class="mb-4">
+    <label for="email" class="form-label">Contraseña</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+      formControlName="password"
+    />
+  </div>
+
+  <!-- validar campo contraseña obligatorio -->
+  <div
+    *ngIf="(loginForm.get('password')?.touched && loginForm.get('password')?.errors?.['required'])"
+    class="alert alert-danger"
+  >
+    Introduzca una contraseña.
+  </div>
+
+  <!-- validar campo contraseña caracteres mínimos -->
+  <div
+    *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.errors?.['minlength']"
+    class="alert alert-danger"
+  >
+    Debe ser una contraseña válida.
+  </div>
+
+  <!-- validar campo contraseña caracteres máximos -->
+  <div
+    *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.errors?.['maxlength']"
+    class="alert alert-danger"
+  >
+    Debe ser una contraseña válida
+  </div>
+
+  <button type="submit" class="btn btn-dark" [disabled]="!loginForm.valid">
+    Iniciar sesión
+  </button>
+</form>

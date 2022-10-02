@@ -5,7 +5,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { GuiaComponent } from './guia/guia.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { RegistroComponent } from './registro/registro.component';
+import { SignupComponent } from './signup/signup.component';
 import { NuevaPublicacionForoComponent } from './nueva-publicacion-foro/nueva-publicacion-foro.component';
 import { NuevaPublicacionGaleriaComponent } from './nueva-publicacion-galeria/nueva-publicacion-galeria.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
@@ -33,7 +33,7 @@ const routes: Routes = [
   },
   {
     path: 'registro',
-    component: RegistroComponent
+    component: SignupComponent
   },
   {
     path: 'nueva-publicacion-foro',
@@ -47,7 +47,7 @@ const routes: Routes = [
     path: 'perfil-usuario',
     component: PerfilUsuarioComponent
   }
-  
+
 ];
 
 @NgModule({

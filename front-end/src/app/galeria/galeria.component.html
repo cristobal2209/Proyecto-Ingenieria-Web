@@ -1,7 +1,7 @@
 <main class="fondo-web">
-  <div class="container-fluid">
+  <div class="container-fluid px-0">
     <!--tags, botones subir foto y filtros-->
-    <section>
+    <section class="bg-success">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 py-2">
         <!--boton filtros-->
         <div class="col d-flex justify-content-center align-items-center">
@@ -9,7 +9,14 @@
             <div class="row">
               <div class="col">
                 <div ngbDropdown class="d-inline-block">
-                  <button type="button" class="btn btn-dark" id="dropdownBasic1" ngbDropdownToggle>Filtrar Tag por:</button>
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    id="dropdownBasic1"
+                    ngbDropdownToggle
+                  >
+                    Filtrar Tag por:
+                  </button>
                   <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                     <button ngbDropdownItem>Más Reciente</button>
                     <button ngbDropdownItem>Me gusta</button>
@@ -46,8 +53,10 @@
         <!--boton subir foto-->
         <div class="col d-flex justify-content-center align-items-center py-3">
           <div class="mx-1 pb-3">
-            <button class="btn btn-dark"
-                    routerLink="/nueva-publicacion-galeria">
+            <button
+              class="btn btn-dark"
+              routerLink="/nueva-publicacion-galeria"
+            >
               Sube tu foto
             </button>
           </div>
@@ -189,7 +198,13 @@
     </section>
     <!-- Pagination -->
     <div class="py-5">
-      <ngb-pagination class="d-flex justify-content-center" [collectionSize]="100" [(page)]="page" [maxSize]="4" [boundaryLinks]="true"></ngb-pagination>
+      <ngb-pagination
+        class="d-flex justify-content-center"
+        [collectionSize]="100"
+        [(page)]="page"
+        [maxSize]="4"
+        [boundaryLinks]="true"
+      ></ngb-pagination>
     </div>
   </div>
 </main>

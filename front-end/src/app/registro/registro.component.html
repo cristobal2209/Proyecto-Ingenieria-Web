@@ -1,21 +1,24 @@
 <main class="fondo-web">
-  <div class="container-fluid py-3">
+  <div class="container-fluid pt-5">
     <div
       class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-3 g-3 py-5"
     >
-      <div class="col d-flex justify-content-center align-items-center">
+      <!-- Imagen -->
+      <div class="col align-items-top">
         <img
           src="assets/images/side-img-login-registro.png"
           class="img-fluid"
         />
       </div>
-      <div
-        class="col d-flex justify-content-center align-items-center text-center"
-      >
-        <H1 class="display-3">¡Empieza a reciclar tu ropa!</H1>
+      <!-- Mensaje central -->
+      <div class="col align-items-top text-center">
+        <H1 class="display-1">¿Listo para el reciclaje de ropa? </H1>
+        <br />
+        <H1 class="display-1">¡Inscríbete! </H1>
       </div>
 
-      <div class="col">
+      <!-- Formulario de registro -->
+      <div class="col p-5">
         <app-register-form></app-register-form>
       </div>
     </div>

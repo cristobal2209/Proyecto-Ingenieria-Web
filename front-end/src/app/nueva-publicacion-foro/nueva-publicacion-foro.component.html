@@ -1,32 +1,57 @@
 <main class="fondo-web">
-    <div class="container">
-        <div class="row">
-            <div class="col py-5">
-                <h1>¿Qué nos dices hoy?</h1>
-                <div class="col d-flex justify-content-start align-items-left py-5">
-                    <form>
-                      <div class="mb-3" >
-                        <label for="login-mail-input" class="form-label">Titulo</label>
-                        <input type="text" class="form-control" placeholder="nombra tu publicación" aria-describedby="basic-addon1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
-                        <textarea type="text" class="form-control" placeholder="de que se trata?" rows="10"></textarea>
-                      </div>
-                    </form>
-                  </div>
-            </div>
-            
-            <!-- para subir imagen con preview https://larainfo.com/blogs/bootstrap-5-image-upload-with-preview -->
-            <div class="col py-5">
-                <div class="mb-5">
-                    <label for="Image" class="form-label"><h2>Sube aqui tu imagen</h2></label>
-                    <input class="form-control " type="file" id="formFile" onchange="preview()">
-                    <button routerLink="/foro" onclick="clearImage()" class="btn btn-dark mt-3">Subir!</button>
-                </div>
-                <img id="frame" src="" class="img-fluid" />
-            </div>
-            
+  <div class="container-fluid px-5">
+    <div
+      class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-2 py-5"
+    >
+      <div class="col px-5">
+        <h1>¿Qué nos dices hoy?</h1>
+        <form>
+          <div class="mb-3">
+            <label for="publication-title" class="form-label">Título</label>
+            <input
+              type="text"
+              class="form-control"
+              name="publication-title"
+              placeholder="Nombra tu publicación"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Descripción</label
+            >
+            <textarea
+              type="text"
+              class="form-control"
+              placeholder="Di una descripción"
+              rows="10"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+
+      <!-- para subir imagen con preview https://larainfo.com/blogs/bootstrap-5-image-upload-with-preview -->
+      <div class="col px-5">
+        <div class="mb-5">
+          <label for="image" class="form-label"
+            ><h2>Sube aquí tu imagen</h2></label
+          >
+          <input
+            class="form-control"
+            type="file"
+            id="image"
+            onchange="preview()"
+          />
+          <button
+            routerLink="/foro"
+            onclick="clearImage()"
+            class="btn btn-dark mt-3"
+          >
+            Publicar
+          </button>
         </div>
+        <img id="frame" src="" class="img-fluid" />
+      </div>
     </div>
+  </div>
 </main>

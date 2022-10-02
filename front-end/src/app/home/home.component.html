@@ -1,5 +1,5 @@
 <main class="fondo-web">
-  <div class="container-fluid">
+  <div class="container-fluid px-0">
     <section>
       <div class="container-fluid text-center bg-success text-white py-3">
         <p class="lead">
@@ -16,11 +16,14 @@
             <!--Start Carousel-->
             <div class="col">
               <ngb-carousel>
-
                 <!--First Slide-->
                 <ng-template ngbSlide>
                   <div class="picsum-img-wrapper">
-                    <img [src]="images[0]" class="img-fluid" alt="Random first slide">
+                    <img
+                      [src]="images[0]"
+                      class="img-fluid"
+                      alt="Random first slide"
+                    />
                   </div>
                   <div class="carousel-caption">
                     <h3>Bienvenido a esta nueva comunidad de tela verde</h3>
@@ -30,20 +33,30 @@
                 <!--Second Slide-->
                 <ng-template ngbSlide>
                   <div class="picsum-img-wrapper">
-                    <img [src]="images[1]" class="img-fluid"  alt="Random second slide">
+                    <img
+                      [src]="images[1]"
+                      class="img-fluid"
+                      alt="Random second slide"
+                    />
                   </div>
                   <div class="carousel-caption">
-                    <h3 class="black">Crea tu propio estilo e impone TU MODA!</h3>
+                    <h3 class="black">
+                      Crea tu propio estilo e impone TU MODA!
+                    </h3>
                   </div>
                 </ng-template>
 
                 <!--Third Slide-->
                 <ng-template ngbSlide>
                   <div class="picsum-img-wrapper">
-                    <img [src]="images[2]" class="img-fluid "  alt="Random third slide">
+                    <img
+                      [src]="images[2]"
+                      class="img-fluid"
+                      alt="Random third slide"
+                    />
                   </div>
                   <div class="carousel-caption">
-                    <h3>La moda ciruclar es alargar la vida de tus prendas</h3>
+                    <h3>La moda circular es alargar la vida de tus prendas</h3>
                   </div>
                 </ng-template>
               </ngb-carousel>
@@ -51,17 +64,13 @@
           </div>
           <!-- End Carousel-->
 
-            <div class="col"></div>
-              <div class="col d-flex justify-content-center py-5">
-                <a
-                  class="btn btn-dark btn-lg"
-                  role="button"
-                  routerLink="/registro"
-                >
-                  ¡Inicia tu el cambio!
-                </a>
-              </div>
-            <div class="col"></div>
+          <div class="col"></div>
+          <div class="col d-flex justify-content-center py-5">
+            <a class="btn btn-dark btn-lg" role="button" routerLink="/registro">
+              ¡Inicia tu el cambio!
+            </a>
+          </div>
+          <div class="col"></div>
         </div>
       </div>
     </section>

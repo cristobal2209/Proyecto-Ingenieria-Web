@@ -1,15 +1,15 @@
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-register-form',
-  templateUrl: './register-form.component.html',
-  styleUrls: ['./register-form.component.scss'],
+  selector: 'app-signup-form',
+  templateUrl: './signup-form.component.html',
+  styleUrls: ['./signup-form.component.scss'],
 })
-export class RegisterFormComponent implements OnInit {
+export class SignupFormComponent implements OnInit {
   registerForm!: FormGroup;
-  password1:any;
-  password2:any;
+  password1: any;
+  password2: any;
 
   constructor(private readonly fb: FormBuilder) {}
 
@@ -19,7 +19,7 @@ export class RegisterFormComponent implements OnInit {
 
   onSubmit(): void {
     console.log('Form ->');
-    console.log(this.registerForm.value)
+    console.log(this.registerForm.value);
   }
 
   initForm(): FormGroup {
@@ -51,11 +51,10 @@ export class RegisterFormComponent implements OnInit {
     return !this.registerForm.valid || this.password1 != this.password2;
   }
 
-  equalPass():boolean {
+  equalPass(): boolean {
     if (this.password1 == this.password2) {
       return true;
-    }
-    else {
+    } else {
       return false;
     }
   }

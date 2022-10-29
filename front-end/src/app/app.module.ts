@@ -9,16 +9,16 @@ import { HomeComponent } from './home/home.component';
 import { GuiaComponent } from './guia/guia.component';
 import { ForoComponent } from './foro/foro.component';
 import { LoginComponent } from './login/login.component';
-import { RegistroComponent } from './registro/registro.component';
+import { SignupComponent } from './signup/signup.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { NuevaPublicacionForoComponent } from './nueva-publicacion-foro/nueva-publicacion-foro.component';
 import { NuevaPublicacionGaleriaComponent } from './nueva-publicacion-galeria/nueva-publicacion-galeria.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
-//import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RegisterFormComponent } from './register-form/register-form.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { JsonReaderComponent } from './json-reader/json-reader.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +29,14 @@ import { LoginFormComponent } from './login-form/login-form.component';
     GuiaComponent,
     ForoComponent,
     LoginComponent,
-    RegistroComponent,
+    SignupComponent,
     GaleriaComponent,
     NuevaPublicacionForoComponent,
     NuevaPublicacionGaleriaComponent,
     PerfilUsuarioComponent,
-    RegisterFormComponent,
+    SignupFormComponent,
     LoginFormComponent,
+    JsonReaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],

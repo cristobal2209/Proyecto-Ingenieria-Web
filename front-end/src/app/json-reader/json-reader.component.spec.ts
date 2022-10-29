@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RegistroComponent } from './registro.component';
+import { JsonReaderComponent } from './json-reader.component';
 
-describe('RegistroComponent', () => {
-  let component: RegistroComponent;
-  let fixture: ComponentFixture<RegistroComponent>;
+describe('JsonReaderComponent', () => {
+  let component: JsonReaderComponent;
+  let fixture: ComponentFixture<JsonReaderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RegistroComponent ]
+      declarations: [ JsonReaderComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RegistroComponent);
+    fixture = TestBed.createComponent(JsonReaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -18,6 +18,7 @@ import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.componen
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { JsonReaderComponent } from './json-reader/json-reader.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
     PerfilUsuarioComponent,
     SignupFormComponent,
     LoginFormComponent,
+    JsonReaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [],

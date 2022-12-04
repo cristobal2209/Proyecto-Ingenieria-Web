@@ -1,12 +1,18 @@
-# Proyecto-Ingenieria-Web
-repositorio de ingenieria web
+# Aplicación web ReUse:Me
+lo que hace la aplicación
 
-Notas de entrega EP3: 
-EP 3.2: Se crearon los arreglos 'users' y 'usersID' cuyos datos se copiaron en el componente 'json-reader' desde el JSON 'user-data' en assets/_files
-EP 3.3: Los formularios validados son los componentes "login-form" y "signup-form", los cuales se ocupan en los componentes "login" y "signup" respectivamente.
-EP 3.4 y 3.4: https://docs.google.com/document/d/1nK8f74c1Q6NjtoMRHctmrNEyYvArEU3Im1uWLBjX_yk/edit?usp=sharing
+## Tecnologías ocupadas
+* AngularCLI 14.
+* NestJS.
 
-Integrantes:
-Cristóbal Cáceres
-René Araya
-Pablo Araya
+### Extensiones de Visual Studio Code
+* Algo
+
+### Librerías ocupadas en AngularCLI
+* bootstrap@5.2.3
+
+## Manipulación de conexón
+### Cambiar parámetros de conexión back-end
+* Ir al archivo '.env' en "back-end\.env"
+* 'DATABASE_URL' contiene la url a la BD, hay que tener cuidado en definir que DBMS es y a que BD especificamente conectarse.
+* Dentro de la misma URL se deben incorporar las credenciales para entrar a la BD.

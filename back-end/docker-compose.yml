@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+
+  ing-web:
+    image: mariadb:10
+    ports:
+      - 3808:3306
+    environment:
+      MARIADB_ROOT_PASSWORD: 1234
+      MARIADB_DATABASE: reuseme

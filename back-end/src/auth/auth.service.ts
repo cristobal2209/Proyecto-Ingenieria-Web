@@ -14,12 +14,15 @@ constructor(private prisma: PrismaService) {}
         //guardar el usuario en la db
         const user = await this.prisma.user.create({
             data: {
-                username: dto.username,
+                userName: "prueba",
                 email: dto.email,
                 hash,
+                likesCount: 0,
+                postCount: 0,
             },
         });
  
+        delete user.hash
         //retornar el usuario guardado
         return user;
     }

@@ -16,8 +16,12 @@ model User {
   updatedAt DateTime @updatedAt
 
   hash     String
-  email    String
+  email    String @unique
   username String
+
+  publications Publication[]
+
+  @@map("users")
 }
 
 model Image {
@@ -25,7 +29,9 @@ model Image {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  link String
+  link String @unique
+
+  @@map("images")
 }
 
 model Publication {
@@ -35,4 +41,9 @@ model Publication {
 
   title String
   description String
+
+  userID Int
+  user User @relation(fields: [userID], references: [id])
+
+  @@map("publications")
 }

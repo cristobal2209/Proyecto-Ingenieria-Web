@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { NgxCaptchaModule } from 'ngx-captcha';
+
 
 @Component({
   selector: 'app-signup-form',

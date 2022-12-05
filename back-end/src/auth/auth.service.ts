@@ -14,11 +14,9 @@ constructor(private prisma: PrismaService) {}
         //guardar el usuario en la db
         const user = await this.prisma.user.create({
             data: {
-                userName: "prueba",
+                username: dto.username,
                 email: dto.email,
                 hash,
-                likesCount: 0,
-                postCount: 0,
             },
         });
  
